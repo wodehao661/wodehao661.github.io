@@ -24,7 +24,7 @@
 
   
 
-  <title>The First | 秋浅の博客</title>
+  <title>在创建博客中的想法 | 秋浅の博客</title>
 
   
 
@@ -101,18 +101,27 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">The First</h1>
+          <h1 class="title-wrap">在创建博客中的想法</h1>
           <h2 class="title-sub-wrap">
             <strong>秋浅</strong>
             <span>发布于</span>
             <time  class="article-date" datetime="2025-01-01T10:44:11.647Z" itemprop="datePublished">2025-01-01</time>
           </h2>
           
+            <h2 class="last-time">
+              <span>最后更新于</span>
+              <time  class="article-updated" datetime="2025-01-02T11:11:05.500Z" itemprop="dateUpdated">2025-01-02</time>
+            </h2>
+          
           
           <ul class="wrap-list dark">
   
+    <li><a href="/categories/%E5%AD%A6%E4%B9%A0/">📒 学习</a></li>
+    
 </ul>
           <ul class="wrap-list dark">
+  
+    <li><a href="/tags/%E5%89%8D%E7%AB%AF/">🏷️ 前端</a></li>
   
 </ul>
         </div>
@@ -136,12 +145,20 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h2 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h2><h3 id="本地插入图片"><a href="#本地插入图片" class="headerlink" title="本地插入图片"></a>本地插入图片</h3><p>由于在格式中定义了image所以本地绝对引用路径只能使用image，所以要在自己的文件下属的source设置一个image用于存放图片（只认可image文件夹里的东西，具体原因后面再研究）在index.js里</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/image/文件名</span><br></pre></td></tr></table></figure>
+        <div class="aplayer-box" data-url='/music/Tokey.mp3' data-name='修罗场' data-artist='椎名林檎' data-cover='/images/05.jpg' data-lrc='/gechi/wy' data-lrcType='3' ></div>
+<h2 id="一些问题"><a href="#一些问题" class="headerlink" title="一些问题"></a>一些问题</h2><h3 id="本地插入图片"><a href="#本地插入图片" class="headerlink" title="本地插入图片"></a>本地插入图片</h3><p>由于在格式中定义了image所以本地绝对引用路径只能使用image，所以要在自己的文件下属的source设置一个image用于存放图片（只认可image文件夹里的东西，具体原因后面再研究）在index.js里</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">image/文件名</span><br></pre></td></tr></table></figure>
 <h3 id="设置文章封面"><a href="#设置文章封面" class="headerlink" title="设置文章封面"></a>设置文章封面</h3><p>cover可以在文章文件开头用来设置每一个新文章的封面，因为header.js里面写了相关代码</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cover： </span><br></pre></td></tr></table></figure>
+<h3 id="关于标签和分类"><a href="#关于标签和分类" class="headerlink" title="关于标签和分类"></a>关于标签和分类</h3><p>如我所料，果然是在fornt-matter里面设置的，每篇文章建议都在开头设置一下标签的分类，这样比较利于查找，就是不知道这两块满了怎么办，分类的话目前就分为学习之类的大类，标签在每个分类里细分，比较学习里的前端后端之类的，向来不太懂分类，所以后面再说</p>
 <h3 id="关于右上角"><a href="#关于右上角" class="headerlink" title="关于右上角"></a>关于右上角</h3><p>每一个都等于一个可跳转的的网页，创建相应名字的.md文件即可</p>
+<h3 id="关于front-matter"><a href="#关于front-matter" class="headerlink" title="关于front - matter"></a>关于front - matter</h3><p>Front-matter 是文件开头的 YAML 或 JSON 代码块，用于配置写作设置。 以 YAML 格式书写时，Front-matter 以三个破折号结束；以 JSON 格式书写时，Front-matter 以三个分号结束。<br>必须要知道的是，不要将其理解为只存在于yaml或json里，可以用来在md里使用以配置写作设置，这是必要的</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">front-matter:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <h3 id="关于主题的使用"><a href="#关于主题的使用" class="headerlink" title="关于主题的使用"></a>关于主题的使用</h3><p>确保主题的文件夹有且只有一层在theme中（多层会导致路径问题），且名字需要和作者的相同，然后更改yml</p>
+<h3 id="关于插件的使用"><a href="#关于插件的使用" class="headerlink" title="关于插件的使用"></a>关于插件的使用</h3><p><code>&#123;%%&#125;</code> 是 Hexo 中用于插入标签插件的语法。并且不止于插件还有很多用法具体可以查看<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/tag-plugins">hexo文档</a>这种语法允许您在 Markdown 文件中嵌入特定的功能或内容，而不需要直接使用 HTML 代码。插件的应用其实在培训里了解过一点，观看插件官方文档就可以明白所用主题插件具体怎么样，接口是啥，fornt-matter为什么这样设置，控制什么功能。</p>
+<h3 id="关于音乐播放器"><a href="#关于音乐播放器" class="headerlink" title="关于音乐播放器"></a>关于音乐播放器</h3><p>aplayer是基于aplayer的，dplayer是基于dplayer的，具体的配置可以去看官网，然后在index.js里配置，</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;%  aplayer</span><br><span class="line">    url=<span class="string">&quot;歌曲地址&quot;</span></span><br><span class="line">    name=<span class="string">&quot;歌曲名&quot;</span></span><br><span class="line">    artist=<span class="string">&quot;作者名&quot;</span></span><br><span class="line">    cover=<span class="string">&quot;图片地址&quot;</span></span><br><span class="line">    lrc=<span class="string">&quot;歌词地址&quot;</span></span><br><span class="line">    lrcType=<span class="string">&quot;3&quot;</span></span><br><span class="line">%&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h3><p>没有自己的云服务器果然还是不行，没有能够存储资源的地方，用这两个插件的时候很大的问题就是想要找到一个指向mp3，mp4的链接太难了，偷偷摸摸的，mp3还可以放在文件里，视频太大了实在没办法，想要一直运行博客的话果然还是得整个服务器还得有域名。</p>
 
       </section>
 
@@ -157,7 +174,7 @@
     <div class="card-text">
       
         <a href="/2025/01/01/01/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">Hello World</h2>
+          <h2 class="card-text--title text-ellipsis">视频和音乐</h2>
         </a>
       
       <div class="card-text--row">Newer</div>
@@ -174,7 +191,7 @@
     <div class="card-text">
       
         <a href="/2025/01/01/hello-world/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">Hello World</h2>
+          <h2 class="card-text--title text-ellipsis">hexo的起始</h2>
         </a>
       
       <div class="card-text--row">Older</div>
@@ -430,13 +447,13 @@
         <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
 </svg>
-        0
+        1
       </div>
       <div class="count-box--item">
         <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
 </svg>
-        0
+        2
       </div>
     </div>
   </div>
@@ -468,6 +485,12 @@
   <div class="widget-body">
     <ul class="categories-list">
       
+        <li class="categories-list-item">
+          <a href="/categories/%E5%AD%A6%E4%B9%A0/">
+            学习 (1)
+          </a>
+        </li>
+        
     </ul>
   </div>
 </section>
@@ -481,7 +504,7 @@
   </div>
   <div class="widget-body">
     <div class="tags-cloud">
-      
+      <a href="/tags/learn/" style="font-size: 10px;" class="tags-cloud-0">learn</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 10px;" class="tags-cloud-0">前端</a>
     </div>
   </div>
 </section>
@@ -544,6 +567,35 @@
 
   
   
+<!-- aplayer -->
+
+  <!-- aplayer 音频 start -->
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer-box");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        let params = {
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          autoplay: false,
+          loop: true,
+          mutex: true,
+        }
+        if (el.dataset.lrc) {
+          params['lrcType'] = 3
+        }
+        new APlayer(params);
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
+
 
 
 
