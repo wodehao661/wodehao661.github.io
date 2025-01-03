@@ -24,7 +24,7 @@
 
   
 
-  <title>测试排版 | 秋浅の博客</title>
+  <title>网站的概念 | 秋浅の博客</title>
 
   
 
@@ -101,7 +101,7 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">测试排版</h1>
+          <h1 class="title-wrap">网站的概念</h1>
           <h2 class="title-sub-wrap">
             <strong>秋浅</strong>
             <span>发布于</span>
@@ -110,7 +110,7 @@
           
             <h2 class="last-time">
               <span>最后更新于</span>
-              <time  class="article-updated" datetime="2025-01-02T11:08:30.642Z" itemprop="dateUpdated">2025-01-02</time>
+              <time  class="article-updated" datetime="2025-01-03T17:54:37.946Z" itemprop="dateUpdated">2025-01-04</time>
             </h2>
           
           
@@ -141,7 +141,18 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        
+        <div class="aplayer-box" data-url='/music/Komorebi.mp3' data-name='叶隙间散落的阳光' data-artist='田熊理秀' data-cover='/images/Komorebi.jpg' data-lrc='/gechi/komorebi' data-lrcType='3' ></div>
+<h2 id="网站工作原理"><a href="#网站工作原理" class="headerlink" title="网站工作原理"></a>网站工作原理</h2><h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><p>chrome，软件之类的作为客户端，也可以把电脑作为客户端，简而言之客户使用的大概可以称为客户端，具有自己独特的ip地址</p>
+<h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><p>等待客户端的请求，确定如何响应客户端的请求，有许多类型的服务器，包括Web服务器，数据库服务器，文件服务器，应用程序服务器等。有独有的ip地址</p>
+<h3 id="ip地址"><a href="#ip地址" class="headerlink" title="ip地址"></a>ip地址</h3><p>互联网协议地址。 TCP &#x2F; IP网络上的设备（计算机，服务器，打印机，路由器等）的数字标识符。这些需要联网的貌似好像都有自己的ip，因为要能确定自己的位置并与其他设备通讯，IP地址有四组数字，以小数点分隔（例如244.155.65.2）。这被称为“逻辑地址”。</p>
+<h3 id="ISP和DNs"><a href="#ISP和DNs" class="headerlink" title="ISP和DNs"></a>ISP和DNs</h3><p>ISP：互联网服务供应商。DNS：域名系统。当你的浏览器收到一个网站，但是实际上它并不知道这个网站在哪，这时候isp作为中间人就用进行dns把域名解析为ip地址，然后浏览器就可以访问了。可以理解为这个人用这个东西做了什么事情</p>
+<h3 id="主机"><a href="#主机" class="headerlink" title="主机"></a>主机</h3><p>连接到网络的计算机 - 它可以是客户端，服务器或任何其他类型的设备。每个主机都有唯一的IP地址。对于网站，主机可以是为该网站的网页提供服务的网络服务器。</p>
+<h3 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h3><p>统一资源定位符。 URL识别特定的Web资源。一个简单的例子是<a target="_blank" rel="noopener" href="https://github.com/someone">https://github.com/someone</a>. URL指定协议（“https”），主机名（github.com）和文件名（某人的个人资料页面）。用户可以从域名为github.com的网络主机通过HTTP获取该URL所标识的Web资源。<br>例如<a target="_blank" rel="noopener" href="https://github.com/someone.*https*%E6%98%AF%E5%8D%8F%E8%AE%AE%EF%BC%8C%E4%BF%9D%E9%9A%9C%E4%BD%9C%E7%94%A8%EF%BC%8CGitHub.com%E6%98%AF%E5%9F%9F%E5%90%8D/%E5%90%8E%E9%9D%A2%E7%9A%84%E6%98%AF%E8%B5%84%E6%BA%90%EF%BC%8Cip%E5%9C%B0%E5%9D%80%E9%87%8C%E5%AD%98%E5%82%A8%E7%9A%84%E4%B8%9C%E8%A5%BF%EF%BC%8C%E5%A6%82%E6%9E%9Curl%E5%90%8E%E9%9D%A2%E6%B2%A1%E6%9C%89%E8%B5%84%E6%BA%90%E5%88%99%E8%BF%9B%E5%85%A5%E4%B8%BB%E9%A1%B5%E9%9D%A2">https://github.com/someone.*https*是协议，保障作用，GitHub.com是域名/后面的是资源，ip地址里存储的东西，如果url后面没有资源则进入主页面</a></p>
+<h3 id="数据历程"><a href="#数据历程" class="headerlink" title="数据历程"></a>数据历程</h3><p>首先浏览器输入url，然后中间商isp就会通过dns获得该网站的ip地址（浏览器要访问网站时，本机的 ISP（互联网服务提供商）提供的 DNS 服务先联系根 DNS 服务器，询问目标域名（如<a target="_blank" rel="noopener" href="http://www.github.com/">www.github.com</a> ）顶级域服务器的 IP，得到反馈后，再与对应的顶级域下的权威域名服务器沟通，获取目标网站服务器的具体 IP 地址。）ip地址变成编成https：*&#x2F;&#x2F;192.30.253.45:443*我们来对这个ip分析，前面是协议中间是ip地址，冒号后面是端口，https的协议端口是443，ISP自然会把这个给我们的服务器，这时候就可以通过这个让我们的浏览器访问服务器了，访问时会把网站链接向服务器发过去申请访问，服务器接收请求并查找垓html页面如果它找不到就会返回404notfound</p>
+<h3 id="数据传输"><a href="#数据传输" class="headerlink" title="数据传输"></a>数据传输</h3><p>当我们发送申请时，信息会被拆成好多块（数据包）每个数据包都标有一个包括源和目标端口号的TCP报头，以及包含源IP地址和目标IP地址作为身份标识的IP报头。然后，数据包通过以太网，WiFi或蜂窝网络传输，并允许在任何路由上经过多次跳转，直到到达目的地。一旦他们到达目的地就会被重新组合<br>TCP &#x2F; IP是一个两部分系统，作为互联网的基本“控制系统”。IP代表互联网协议;其作用是使用每个数据包上的IP头（即IP地址）将数据包发送到其他计算机。传输控制协议（TCP）负责将消息或文件分解成较小的数据包，使用TCP头将数据包路由到目的地计算机上的正确应用程序，如果丢包，则重新发送数据包;一旦到达另一端，重新组装数据包。<br>浏览器有一个渲染引擎，负责显示内容。 渲染引擎以小块形式接收资源的内容。 然后有一个HTML解析算法告诉浏览器如何解析资源。<br>DOM树，（类似于树状图？就比如head，body为一级然后逐级分布）当时概念不是很理解，现在知道在浏览器接收到内容时，会通过浏览dom树（遍历dom树上的每一个节点，也就是你的代码）来按照代码预期构造网站</p>
+<h2 id="客户端-服务器"><a href="#客户端-服务器" class="headerlink" title="客户端-服务器"></a>客户端-服务器</h2><h3 id="最基本的结构"><a href="#最基本的结构" class="headerlink" title="最基本的结构"></a>最基本的结构</h3><p><em>客户端</em>，<em>服务器</em>，<em>数据库</em><br>客户端:<br>用户可到的页面，用户与之交互的地方，所见即所得，客户端无论是html，css，js有部分功能用户可以与界面交互而不需要请求服务器，但是大多数交互需要发送请求到服务器上来处理，比如发表评论则可能需要将该评论存储在数据库中，以使所有的繁杂信息组织在一个位置。 因此，发送请求将用户ID和评论发送到服务器，并且服务器将侦听这些请求并相应地处理它们。（避免什么玩意都在自己的页面上那不得慢死）就比如你不联网打开一个软件，能看到的东西依旧能使用就是前端的，储存在本地的东西（具体不太一样因为我也才疏学浅所以先这么表述），而需要联网的那些资源就存放在服务器随时调用<br>服务器:<br>在 Web 应用程序里，服务器时刻监听着客户端发来的请求。搭建 HTTP 服务器时，需要为其设定一个用于监听的端口号。要知道，每个端口号都会和计算机（服务器的计算机） 唯一的 IP 地址建立起对应关联 。计算机是一座大厦，那么端口就是大厦里的一个个房间他们的编号不同，用处不同，不同的应用程序执行上网，收发邮件这种不同的任务时会利用不同的端口，就你如你用浏览器访问网站，浏览器就默认使特定的端口号传输数据这个端口号就专门用来浏览数据（上面我们说了数据传输时数据分解包含了端口号，就像图书分类给每个功能编号就更容易放回原处）<br>一旦您设置了HTTP服务器来侦听特定的端口，服务器将等待来自该特定端口的客户端请求，执行该请求所描述的操作，并通过HTTP发送响应请求的数据。<br>数据库:数据库是存储信息的地方，可以轻松访问，管理和更新信息。<br>例如，如果您正在构建社交媒体网站，则会使用数据库来存储有关用户，帖子和评论的信息。 当访问者请求页面时，来自站点的数据库中的数插入到页面，从而允许我们在诸如Facebook等（如Gmail）这样的网站上进行实时的用户互动。（所以数据库在服务器之上）</p>
+<h2 id="http-https"><a href="#http-https" class="headerlink" title="http&#x2F;https"></a>http&#x2F;https</h2><p>困了，回头再写</p>
+
       </section>
 
       
@@ -549,6 +560,35 @@
 
   
   
+<!-- aplayer -->
+
+  <!-- aplayer 音频 start -->
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer-box");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        let params = {
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          autoplay: false,
+          loop: true,
+          mutex: true,
+        }
+        if (el.dataset.lrc) {
+          params['lrcType'] = 3
+        }
+        new APlayer(params);
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
+
 
 
 
