@@ -110,7 +110,7 @@
           
             <h2 class="last-time">
               <span>最后更新于</span>
-              <time  class="article-updated" datetime="2025-01-02T11:11:05.500Z" itemprop="dateUpdated">2025-01-02</time>
+              <time  class="article-updated" datetime="2025-01-03T18:16:18.661Z" itemprop="dateUpdated">2025-01-04</time>
             </h2>
           
           
@@ -158,7 +158,8 @@
 <h3 id="关于插件的使用"><a href="#关于插件的使用" class="headerlink" title="关于插件的使用"></a>关于插件的使用</h3><p><code>&#123;%%&#125;</code> 是 Hexo 中用于插入标签插件的语法。并且不止于插件还有很多用法具体可以查看<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/tag-plugins">hexo文档</a>这种语法允许您在 Markdown 文件中嵌入特定的功能或内容，而不需要直接使用 HTML 代码。插件的应用其实在培训里了解过一点，观看插件官方文档就可以明白所用主题插件具体怎么样，接口是啥，fornt-matter为什么这样设置，控制什么功能。</p>
 <h3 id="关于音乐播放器"><a href="#关于音乐播放器" class="headerlink" title="关于音乐播放器"></a>关于音乐播放器</h3><p>aplayer是基于aplayer的，dplayer是基于dplayer的，具体的配置可以去看官网，然后在index.js里配置，</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;%  aplayer</span><br><span class="line">    url=<span class="string">&quot;歌曲地址&quot;</span></span><br><span class="line">    name=<span class="string">&quot;歌曲名&quot;</span></span><br><span class="line">    artist=<span class="string">&quot;作者名&quot;</span></span><br><span class="line">    cover=<span class="string">&quot;图片地址&quot;</span></span><br><span class="line">    lrc=<span class="string">&quot;歌词地址&quot;</span></span><br><span class="line">    lrcType=<span class="string">&quot;3&quot;</span></span><br><span class="line">%&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h3><p>没有自己的云服务器果然还是不行，没有能够存储资源的地方，用这两个插件的时候很大的问题就是想要找到一个指向mp3，mp4的链接太难了，偷偷摸摸的，mp3还可以放在文件里，视频太大了实在没办法，想要一直运行博客的话果然还是得整个服务器还得有域名。</p>
+<h3 id="想法"><a href="#想法" class="headerlink" title="想法"></a>想法</h3><p>没有自己的云服务器果然还是不行，没有能够存储资源的地方，用这两个插件的时候很大的问题就是想要找到一个指向mp3，mp4的链接太难了，偷偷摸摸的，mp3还可以放在文件里，视频太大了实在没办法，想要一直运行博客的话果然还是得整个服务器还得有域名。  </p>
+<h3 id="推送到git"><a href="#推送到git" class="headerlink" title="推送到git"></a>推送到git</h3><p>1.刚才更新代码的时候一直报错，狗操的ai还说的含糊其辞什么ssl出问题了github官方出问题了啥的，结果我一想我今天换了另一个网就换回去了试一下，发现可以推送了，真无语感觉ai好蠢<br>IP 地址白名单或信任机制：某些远程仓库服务（如 GitHub）可能会根据用户的 IP 地址进行访问权限验证或安全检查。<br>原来的网络 IP 地址可能已经在远程仓库的信任列表或白名单中，被视为可信来源，因此可以顺利进行部署操作。<br>2.当切换到新网络时，新的 IP 地址可能未被识别或不在信任范围内，导致访问被拒绝或出现连接问题。换回原来的网络后，由于 IP 地址被认可，所以能够成功进行部署。<br>身份验证缓存或持久化：在之前使用原来网络进行部署时，系统或相关工具可能已经缓存了有效的身份验证信息（如 SSH 密钥、访问令牌等），并且这些缓存信息在该网络环境下能够持续有效。<br>切换网络后，新环境可能无法正确获取或使用这些缓存的身份验证数据，导致访问远程仓库时出现权限问题。<br>而换回原来的网络后，能够再次利用已缓存的有效身份验证信息，顺利完成对远程仓库的访问和部署操作。</p>
 
       </section>
 
